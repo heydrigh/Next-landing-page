@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from 'styled-components';
+import media from 'styled-media-query';
 
 export const Box = styled.section`
   ${({ theme }) => css`
@@ -18,7 +18,7 @@ export const Box = styled.section`
       border-radius: ${theme.border.radius};
     `}
   `}
-`
+`;
 
 export const Prices = styled.div`
   ${({ theme }) => css`
@@ -32,7 +32,7 @@ export const Prices = styled.div`
       margin-bottom: ${theme.spacings.large};
     `}
   `}
-`
+`;
 
 export const FullPrice = styled.p`
   ${({ theme }) => css`
@@ -44,7 +44,7 @@ export const FullPrice = styled.p`
       text-decoration: line-through;
     }
   `}
-`
+`;
 
 export const DiscountPrice = styled.p`
   ${({ theme }) => css`
@@ -57,38 +57,40 @@ export const DiscountPrice = styled.p`
       font-size: ${theme.font.sizes.medium};
     }
   `}
-`
+`;
 
-export const BenefitsList = styled.ul`
-  ${({ theme }) => css`
-    list-style: none;
-    margin-bottom: ${theme.spacings.large};
-  `}
-`
+export const BenefitsList = styled.div`
+  ul {
+    ${({ theme }) => css`
+      list-style: none;
+      margin-bottom: ${theme.spacings.large};
+    `}
+  }
 
-export const BenefitsItem = styled.li`
-  ${({ theme }) => css`
-    color: ${theme.colors.black};
-    font-size: ${theme.font.sizes.small};
-    position: relative;
-    padding-left: ${theme.spacings.small};
+  li {
+    ${({ theme }) => css`
+      color: ${theme.colors.black};
+      font-size: ${theme.font.sizes.small};
+      position: relative;
+      padding-left: ${theme.spacings.small};
 
-    &::after {
-      content: ' ';
-      position: absolute;
-      width: 0.9rem;
-      height: 0.9rem;
-      top: 0.9rem;
-      left: 0rem;
-      border-radius: 100%;
-      background: ${theme.colors.secondary};
-    }
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 0.9rem;
+        height: 0.9rem;
+        top: 0.9rem;
+        left: 0rem;
+        border-radius: 100%;
+        background: ${theme.colors.secondary};
+      }
 
-    &:not(:last-child) {
-      margin-bottom: ${theme.spacings.xsmall};
-    }
-  `}
-`
+      &:not(:last-child) {
+        margin-bottom: ${theme.spacings.xsmall};
+      }
+    `}
+  }
+`;
 
 export const ButtonFullPrice = styled.span`
   ${({ theme }) => css`
@@ -97,10 +99,10 @@ export const ButtonFullPrice = styled.span`
     margin-right: ${theme.spacings.xxsmall};
     font-size: ${theme.font.sizes.xsmall};
   `}
-`
+`;
 
 export const ButtonDiscountPrice = styled.span`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
   `}
-`
+`;

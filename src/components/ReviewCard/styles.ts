@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 export const Card = styled.div`
   ${({ theme }) => css`
@@ -9,20 +9,18 @@ export const Card = styled.div`
     margin: ${theme.spacings.medium} 1.2rem;
     min-height: 26rem;
   `}
-`
+`;
 
 export const User = styled.div`
   align-items: center;
   display: flex;
-`
+`;
 
-export const Image = styled.picture`
-  img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100%;
-  }
-`
+export const Image = styled.img`
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+`;
 
 export const Name = styled.p`
   ${({ theme }) => css`
@@ -30,7 +28,7 @@ export const Name = styled.p`
     font-weight: ${theme.font.bold};
     margin-left: ${theme.spacings.xsmall};
   `}
-`
+`;
 
 export const Text = styled.blockquote`
   ${({ theme }) => css`
@@ -79,4 +77,4 @@ export const Text = styled.blockquote`
       overflow: hidden;
     }
   `}
-`
+`;
